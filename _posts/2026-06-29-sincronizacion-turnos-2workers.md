@@ -59,3 +59,20 @@ Una vez resuelto el incidente, documenté internamente una línea de tiempo del 
 Durante este proceso aplicué el principio de feedback radicalmente sincero principalmente hacia mi propio trabajo: en vez de cerrar el incidente apenas el síntoma visible desapareció (los reportes de los supervisores bajaron tras la primera corrección de timezone), me obligué a preguntar *por qué* ese fix no explicaba el patrón completo de errores, lo cual llevó a destapar las otras dos causas. Ser sincero conmigo mismo sobre que "funciona ahora" no es lo mismo que "está resuelto" fue lo que evitó dejar dos bugs latentes en producción.
 
 También documenté el post-mortem de forma directa y sin atenuantes: nombré explícitamente la falta de observabilidad como una decisión de diseño insuficiente, no como un detalle menor, porque suavizar ese punto en el reporte habría hecho menos probable que se priorizara la corrección.
+---
+
+## Evidencia de control de versiones
+
+El trabajo de corrección y la documentación de este post quedaron registrados en el repositorio público del proyecto, con el siguiente historial de commits:
+
+- `chore: configura Jekyll para GitHub Pages`
+- `feat: agrega index con layout home para listar posts`
+- `docs: agrega post-mortem sincronizacion 2Workers`
+- `fix: corrige ruta duplicada de _posts`
+- `fix: agrega theme minima para soportar layout home y post`
+
+Repositorio completo: [github.com/nahuelalberro1-oss/blog-mentalidad-crecimiento](https://github.com/nahuelalberro1-oss/blog-mentalidad-crecimiento)
+
+Historial de commits: [github.com/nahuelalberro1-oss/blog-mentalidad-crecimiento/commits/main](https://github.com/nahuelalberro1-oss/blog-mentalidad-crecimiento/commits/main)
+
+---
